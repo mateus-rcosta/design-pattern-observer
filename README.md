@@ -9,8 +9,8 @@ Este projeto demonstra como implementar o padrão Observer em Java, permitindo q
 
 ## Estrutura
 
-- `Subject`: Interface para gerenciamento de observadores.
-- `Observer`: Interface para atualização dos observadores.
+- `Sujeito(Subject)`: Interface para gerenciamento de observadores.
+- `Observador(Observer)`: Interface para atualização dos observadores.
 - Implementações concretas de `Subject` e `Observer`.
 
 ## Como executar
