@@ -1,8 +1,8 @@
 package Clima;
 
-import interfaces.Observador;
+import interfaces.Observer;
 
-public class DisplayCondicoesAtual implements Observador {
+public class DisplayCondicoesAtual implements Observer {
     private double temperatura;
     private double umidade;
 

@@ -1,8 +1,8 @@
 package Clima;
 
-import interfaces.Observador;
+import interfaces.Observer;
 
-public class DisplayEstatistica implements Observador {
+public class DisplayEstatistica implements Observer {
     private double somaTemperatura = 0.0;
     private int numLeituras = 0;
     private double maxTemperatura;

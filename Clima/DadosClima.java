@@ -3,12 +3,12 @@ package Clima;
 import java.util.ArrayList;
 import java.util.List;
 
-import interfaces.Observador;
-import interfaces.Sujeito;
+import interfaces.Observer;
+import interfaces.Subject;
 
 
-public class DadosClima implements Sujeito {
-    private List<Observador> observadores;
+public class DadosClima implements Subject {
+    private List<Observer> observadores;
     private double temperatura;
     private double umidade;
     private double pressao;
@@ -18,18 +18,18 @@ public class DadosClima implements Sujeito {
     }
 
     @Override
-    public void registrarObservador(Observador o) {
+    public void registrarObservador(Observer o) {
         observadores.add(o);
     }
 
     @Override
-    public void removerObservador(Observador o) {
+    public void removerObservador(Observer o) {
         observadores.remove(o);
     }
 
     @Override
     public void notificarObservadores() {
-        for (Observador Observador : observadores) {
+        for (Observer Observador : observadores) {
             Observador.atualizar(temperatura, umidade, pressao);
         }        
     }
